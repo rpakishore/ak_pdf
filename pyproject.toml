@@ -3,7 +3,7 @@ requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "template_python"
+name = "ak_pdf"
 requires-python = ">=3.11.0"
 authors = [{name = "Arun Kishore", email = "pypi@rpakishore.co.in"}]
 readme = "README.md"
@@ -11,12 +11,9 @@ license = {file = "LICENSE"}
 classifiers = ["License :: OSI Approved :: MIT License"]
 dynamic = ["version", "description"]
 dependencies = [
-    "pandas",
-    "typer[all]",   #cli_app.py
-    "icecream",     
-    "slack_sdk",    #Slack.py
-    "ak_requests",
-    "keyring"   #credentials.py
+    "icecream",
+    "pypdf",
+    "Pillow"
 ]
 
 [project.optional-dependencies]
@@ -25,12 +22,11 @@ test = [
 ]
 
 dev = [
-    "ipykernel",
-    "pandasgui"
+    "ipykernel"
 ]
 
 [project.urls]
-Home = "https://github.com/rpakishore/Template-Python"
+Home = "https://github.com/rpakishore/ak_pdf"
 
 [project.scripts]
-app="template_python.cli_app:app"
+app="ak_pdf.cli_app:app"
