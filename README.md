@@ -152,6 +152,4 @@ Project Link: [https://github.com/rpakishore/ak_pdf](https://github.com/rpakisho
 <!-- Acknowledgments -->
 ## 8. Acknowledgements
 
-Use this section to mention useful resources and libraries that you have used in your projects.
-
 - [Shields.io](https://shields.io/)
