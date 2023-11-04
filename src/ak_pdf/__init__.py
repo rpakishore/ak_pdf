@@ -6,5 +6,17 @@ from icecream import ic
 
 from ak_pdf.reader import Reader
 
-ic.disable()
-ic.enable()     # Comment this line out to enable debugger
+def debug(status=False):
+    """Import this in a new module and enable debug to use debug
+    example:
+    ```python
+    import template_python.debug
+    template_python.debug(True)
+    ```
+    """
+    if status:
+        ic.enable()
+    else:
+        ic.disable()
+    
+debug(status=False)

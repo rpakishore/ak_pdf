@@ -87,7 +87,8 @@ flit install
 Reader Functionality
 
 ```python
-from ak_pdf import Reader
+from ak_pdf import Reader, debug
+debug(True) #For debug messages, Can be skipped.
 
 # Initialize
 pdf = Reader(filepath=r"textbook.pdf", password=None)
