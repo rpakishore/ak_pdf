@@ -1,10 +1,9 @@
-#myLog.py
-import logging, getpass, time
+import logging
+import getpass
+import time
 from pathlib import Path
 
 class Log(object):
-    #class CALog(logging.Logger):
-# Reference - 
 # http://yhhuang1966.blogspot.com/2018/04/python-logging_24.html
     def __init__(self):
         user=getpass.getuser()

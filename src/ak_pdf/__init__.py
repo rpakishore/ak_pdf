@@ -5,6 +5,7 @@ from ak_pdf.logger import Log
 from icecream import ic
 
 from ak_pdf.reader import Reader
+log = Log()
 
 def debug(status=False):
     """Import this in a new module and enable debug to use debug
@@ -16,7 +17,9 @@ def debug(status=False):
     """
     if status:
         ic.enable()
+        log.setLevel(10)
     else:
         ic.disable()
+        log.setLevel(20)
     
 debug(status=False)
