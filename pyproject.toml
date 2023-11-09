@@ -13,7 +13,8 @@ dynamic = ["version", "description"]
 dependencies = [
     "icecream",
     "pypdf",
-    "Pillow"
+    "Pillow",
+    "ak_file==0.1.4"
 ]
 
 [project.optional-dependencies]
