@@ -11,9 +11,9 @@ license = {file = "LICENSE"}
 classifiers = ["License :: OSI Approved :: MIT License"]
 dynamic = ["version", "description"]
 dependencies = [
-    "icecream",
-    "pypdf",
-    "Pillow",
+    "icecream==2.1.3",
+    "pypdf==3.17.0",
+    "Pillow==10.1.0",
     "ak_file==0.1.4"
 ]
 
